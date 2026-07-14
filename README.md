@@ -1,5 +1,7 @@
 Sortiranje fotografija po datumu
+
 Python skripta koja prolazi kroz folder (i sve njegove podfoldere, bez obzira na dubinu), pronalazi sve slike i video zapise, sortira ih hronološki po pravom datumu snimanja, i prepoznaje duplikate na osnovu sadržaja fajla.
+
 Šta radi:
 	•	Rekurzivno prolazi kroz zadati folder i sve podfoldere
 	•	Za svaki fajl očitava datum snimanja iz EXIF/metapodataka (preko exiftool), sa fallback-om na datum fajla na disku ako metapodaci ne postoje
@@ -16,9 +18,11 @@ Upotreba:
 	1	Pokreni: python3 sortiraj_fotografije.py
 	2	Pregledaj rezultat u OUTPUT_FOLDER i listu duplikata u duplikati_log.txt
 	3	Ako se slažeš sa listom duplikata, promeni DELETE_DUPLICATES_FROM_SOURCE = True i pokreni skriptu ponovo — tek tada briše duplikate iz originalnog foldera
+
 Napomena
 Skripta kopira fajlove (ne premešta), pa privremeno treba dovoljno slobodnog prostora na disku za i original i kopiju.
 ——————————————
 Napomena 2!
 Nisam stigla da finalizujem skriptu - work in progress.  Ukoliko odlucite da je pokrenete - cinite to na sopstvenu odgovornost.
+
 Verzija 5.2
